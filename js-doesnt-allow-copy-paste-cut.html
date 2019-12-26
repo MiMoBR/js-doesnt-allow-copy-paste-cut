@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title></title>
+
+		<style type="text/css">
+		</style>
+
+	</head>
+	<body>
+		<div>
+			<label>Try Copy</label>
+			<input type="text" name="tryCopy" id="tryCopy">
+		</div><br><br>
+		<div>
+			<label>Try Cut</label>
+			<input type="text" name="tryCut" id="tryCut">
+		</div><br><br>
+		<div>
+			<label>Try Paste</label>
+			<input type="text" name="tryPaste" id="tryPaste">
+		</div>
+		<script type="text/javascript">
+			
+			document.getElementById("tryCopy").addEventListener("copy", function(event){event.preventDefault();});
+			document.getElementById("tryCut").addEventListener("cut", function(event){event.preventDefault();});
+			document.getElementById("tryPaste").addEventListener("paste", function(event){event.preventDefault();});
+
+		</script>
+	</body>
+</html>
